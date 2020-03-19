@@ -1,0 +1,45 @@
+.v-application--is-rtl.v-application,
+html,
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
+:root {
+  box-sizing: border-box;
+}
+html {
+  direction: $global-direction;
+}
+body {
+  background-color: $gray-5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.text-start {
+  @include text_align_start();
+}
+
+.dima-text-end {
+  @include text_align_end();
+}
+
+.float-start {
+  @include float-start();
+}
+
+.float-end {
+  @include float-end();
+}

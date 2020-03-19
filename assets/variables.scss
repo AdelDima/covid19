@@ -1,0 +1,242 @@
+$global-direction: rtl !default;
+
+// ==================
+// color
+$green-1: #276749;
+$green-2: #2f855a;
+$green-3: #38a169;
+$green-4: #48bb78;
+$gray-1: #1a202c;
+$gray-2: #2d3748;
+$gray-3: #4a5568;
+$gray-4: #718096;
+$gray-5: #edf2f7;
+$white: #ffffff;
+$link: #3182ce;
+
+// ==================
+// shadow
+$shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+
+// ==================
+// break-points
+$huge: 1440;
+$large: 1170;
+$medium: 768;
+$small: 600;
+$tiny: 320;
+
+// ==================
+// z-index
+$z-index-map: (
+  opened-side-navigation: 101,
+  sp-navigation: 100
+);
+@function z-index-of($key) {
+  @return map-get($z-index-map, $key);
+}
+
+// ==================
+// media-query
+@mixin largerThan($width) {
+  @media screen and (min-width: $width + 1 + px) {
+    @content;
+  }
+}
+
+@mixin lessThan($width) {
+  @media screen and (max-width: $width + px) {
+    @content;
+  }
+}
+
+// ==================
+// font-size
+@mixin font-size($size, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) + rem;
+}
+@mixin card-h1 {
+  @include font-size(24);
+  color: $gray-2;
+  font-weight: bold;
+}
+@mixin card-h2 {
+  @include font-size(19);
+  color: $gray-2;
+  font-weight: bold;
+}
+@mixin body-text {
+  @include font-size(16);
+  color: $gray-1;
+  line-height: 160%;
+  font-weight: normal;
+}
+
+// ===================
+// button
+@mixin text-link {
+  @include font-size(14);
+  color: $link !important;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin button-text($size: 'md') {
+  @if ($size == 'sm') {
+    padding: 4px 8px;
+  } @else {
+    padding: 24px 36px;
+  }
+  @include font-size(14);
+  display: inline-block;
+  border-radius: 4px;
+  background-color: $white;
+  border: 1px solid $green-1;
+  color: $green-1;
+  cursor: pointer;
+  &:hover {
+    background-color: $green-1;
+    color: $white;
+    > i {
+      color: $white !important;
+    }
+  }
+}
+
+// ===================
+// card
+@mixin card-container($withDivider: false) {
+  background-color: $white;
+  box-shadow: $shadow;
+  border: 0.5px solid $gray-4 !important;
+  border-radius: 4px;
+  @if ($withDivider) {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $gray-4;
+    }
+  }
+}
+
+//Adel Tahri
+// Scss File Content Direction Control
+// Author @PixelDima
+// Returns the opposite value of `$value`
+// @param {*} $value
+// @return {*}
+@function opposite-value($value) {
+  @return if(index(left right, $value), if($value == left, right, left), $value);
+}
+
+// Set up the global configuration
+// @return Map
+@function direction-configuration() {
+  $global-side: if($global-direction == "rtl", right, left);
+  $opposite-global-side: opposite-value($global-side);
+
+  @return (
+    direction: $global-direction,
+    side: $global-side,
+    opposite-side: $opposite-global-side
+  );
+}
+$direction-configuration: direction-configuration() !global;
+
+// Define a directional value
+// @param {*} $value
+// @return {*}
+@function directional-side($value) {
+  $global-side: map-get($direction-configuration, "side");
+  @return if($global-side == $value, $value, opposite-value($value));
+}
+
+
+@mixin text_align_start() {
+  $global-side: map-get($direction-configuration, "side");
+  text-align: #{$global-side};
+}
+@mixin text_align_end() {
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  text-align: #{$opposite-global-side};
+}
+
+@mixin float_start() {
+  $global-side: map-get($direction-configuration, "side");
+  float: #{$global-side};
+}
+@mixin float_end() {
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  float: #{$opposite-global-side};
+}
+
+@mixin clear_start() {
+  $global-side: map-get($direction-configuration, "side");
+  clear: #{$global-side};
+}
+@mixin clear_end() {
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  clear: #{$opposite-global-side};
+}
+
+
+
+@mixin border-start($value) {
+  $global-side: map-get($direction-configuration, "side");
+  border-#{$global-side}: $value;
+}
+
+@mixin border-end($value) {
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  border-#{$opposite-global-side}: $value;
+}
+
+@mixin padding-start($value) {
+  $global-side: map-get($direction-configuration, "side");
+  padding-#{$global-side}: $value;
+}
+
+@mixin padding-end($value) {
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  padding-#{$opposite-global-side}: $value;
+}
+
+@mixin margin-start($value) {
+  $global-side: map-get($direction-configuration, "side");
+  margin-#{$global-side}: $value;
+}
+
+@mixin margin-end($value) {
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  margin-#{$opposite-global-side}: $value;
+}
+
+@mixin start($value) {
+  $global-side: map-get($direction-configuration, "side");
+  #{$global-side}: $value;
+}
+@mixin end($value) {
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  #{$opposite-global-side}: $value;
+}
+
+@mixin border-start-color($value){
+  $global-side: map-get($direction-configuration, "side");
+  border-#{$global-side}-color:$value;
+}
+@mixin border-end-color($value){
+  $opposite-global-side: map-get($direction-configuration, "opposite-side");
+  border-#{$opposite-global-side}-color:$value;
+}
+
+@mixin border-start-width($value) {
+  $global-side: map-get($direction-configuration, "side");
+  border-#{$global-side}-width: $value;
+}
