@@ -148,7 +148,7 @@ $z-index-map: (
     opposite-side: $opposite-global-side
   );
 }
-$direction-configuration: direction-configuration() !global;
+$direction-configuration: direction-configuration();
 
 // Define a directional value
 // @param {*} $value

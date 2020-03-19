@@ -40,6 +40,7 @@
     "cross-env": "^5.2.0",
     "dayjs": "^1.8.21",
     "express": "^4.16.4",
+    "netlify-cli": "^2.40.0",
     "nuxt": "^2.11.0",
     "nuxt-i18n": "^6.6.0",
     "tailwindcss": "^1.2.0",
