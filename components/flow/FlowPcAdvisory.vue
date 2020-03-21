@@ -32,7 +32,7 @@
             ]"
           >
             <a
-              href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+              href="http://covid19.sante.gov.dz/numeros-utiles/"
               target="_blank"
               rel="noopener"
             >
@@ -64,13 +64,13 @@
             'mt-1'
           ]"
         >
-          <a :class="$style.AdvisoryTelephone" href="tel:0353204592">
+          <a :class="$style.AdvisoryTelephone" href="tel:3030">
             <img
               :class="$style.AdvisoryTelephoneIcon"
               src="/flow/phone-24px.svg"
               aria-hidden="true"
             />
-            03-5320-4592
+            3030
           </a>
         </div>
       </div>
@@ -118,7 +118,7 @@
   }
   &Link {
     line-height: 22px;
-    text-align: left;
+    @include text_align_start();
     a {
       color: rgba(0, 0, 0, 0.87);
       text-decoration: none;
@@ -140,12 +140,12 @@
     &:hover,
     &:active,
     &:focus {
-      color: inherit;
+      color: #48bb78;
       text-decoration: none;
     }
     &Icon {
       display: inline-block;
-      margin-right: 5px;
+      @include margin_end(5px);
       width: 26px;
       height: 26px;
     }

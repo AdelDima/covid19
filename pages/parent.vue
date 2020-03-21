@@ -37,7 +37,7 @@ export default Vue.extend({
               '不特定多数の人の集まる場所等への外出を避け、基本的に自宅で過ごしてください。'
             ),
             this.$t('手洗い、咳エチケット等により、感染予防に努めてください。'),
-            '<a href="https://tokyodouga.jp/lViN9C_BS-0.html" target="_blank" rel="noopener">' +
+            '<a href="https://www.youtube.com/watch?v=Jyjxn-CNChE" target="_blank" rel="noopener">' +
               this.$t('【参考】感染症予防のための正しい手洗い方法（動画）') +
               '</a>',
             this.$t(
@@ -49,18 +49,10 @@ export default Vue.extend({
           title: `2. ${this.$t('感染症を疑う場合の対応')}`,
           body: [
             this.$t('各保健所にご相談ください'),
-            '<a href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html" target="_blank" rel="noopener">' +
-              this.$t(
-                '「新型コロナウイルス感染症にかかる相談窓口について」（東京都福祉保健局）'
-              ) +
+            '<a href="http://covid19.sante.gov.dz/numeros-utiles/" target="_blank" rel="noopener">' +
+              this.$t('خدمة استشارية للعدوى بفيروس كورونا الجديد') +
               '</a>'
           ].join('<br />')
-        },
-        {
-          title: `3. ${this.$t('その他')}`,
-          body: this.$t(
-            '詳細は、各学校からのお知らせ等をご確認ください。'
-          ) as string
         }
       ]
     }

@@ -6,8 +6,11 @@
         <scale-loader color="#00A040" />
       </div>
     </v-overlay>
-    <div v-if="hasNavigation" class="appContainer">
-      <div class="naviContainer">
+    <div
+      v-if="hasNavigation"
+      class="appContainer xl:flex-1 xl:flex xl:overflow-y-hidden"
+    >
+      <div class="naviContainer xl:w-72 sm:w-full">
         <SideNavigation
           :is-navi-open="isOpenNavigation"
           :class="{ open: isOpenNavigation }"
@@ -15,7 +18,10 @@
           @closeNavi="hideNavigation"
         />
       </div>
-      <main class="mainContainer" :class="{ open: isOpenNavigation }">
+      <main
+        class="mainContainer w-full max-w-screen-xl mx-auto px-6 py-6 xl:flex-1 xl:overflow-x-hidden"
+        :class="{ open: isOpenNavigation }"
+      >
         <v-container class="p-5">
           <nuxt />
         </v-container>
@@ -37,8 +43,7 @@ import { MetaInfo } from 'vue-meta'
 import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
 import SideNavigation from '@/components/SideNavigation.vue'
 import NoScript from '@/components/NoScript.vue'
-//import DevelopmentModeMark from '@/components/DevelopmentModeMark.vue'
-
+// import DevelopmentModeMark from '@/components/DevelopmentModeMark.vue'
 
 type LocalData = {
   hasNavigation: boolean
@@ -48,7 +53,7 @@ type LocalData = {
 
 export default Vue.extend({
   components: {
-    //DevelopmentModeMark,
+    // DevelopmentModeMark,
     ScaleLoader,
     SideNavigation,
     NoScript
@@ -104,18 +109,12 @@ export default Vue.extend({
         {
           hid: 'og:site_name',
           name: 'og:site_name',
-          content:
-            this.$t('東京都') +
-            ' ' +
-            this.$t('新型コロナウイルス感染症')
+          content: this.$t('東京都') + ' ' + this.$t('新型コロナウイルス感染症')
         },
         {
           hid: 'og:title',
           name: 'og:title',
-          content:
-            this.$t('東京都') +
-            ' ' +
-            this.$t('新型コロナウイルス感染症')
+          content: this.$t('東京都') + ' ' + this.$t('新型コロナウイルス感染症')
         },
         {
           hid: 'og:description',
@@ -132,10 +131,7 @@ export default Vue.extend({
         {
           hid: 'apple-mobile-web-app-title',
           name: 'apple-mobile-web-app-title',
-          content:
-            this.$t('東京都') +
-            ' ' +
-            this.$t('新型コロナウイルス感染症')
+          content: this.$t('東京都') + ' ' + this.$t('新型コロナウイルス感染症')
         },
         {
           hid: 'twitter:image',
@@ -149,7 +145,6 @@ export default Vue.extend({
 </script>
 <style lang="scss">
 .app {
-  max-width: 1440px;
   margin: 0 auto;
   background-color: inherit !important;
 }
@@ -161,45 +156,7 @@ export default Vue.extend({
     padding: 0 !important;
   }
 }
-.appContainer {
-  position: relative;
-  @include largerThan($small) {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: auto;
-  }
-  @include largerThan($huge) {
-    grid-template-columns: 325px 1fr;
-    grid-template-rows: auto;
-  }
-}
-@include lessThan($small) {
-  .naviContainer {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: z-index-of(sp-navigation);
-  }
-}
-@include largerThan($small) {
-  .naviContainer {
-    grid-column: 1/2;
-    position: fixed;
-    top: 0;
-    overflow-y: auto;
-    width: 240px;
-    height: 100%;
-    border-right: 1px solid $gray-4;
-    border-left: 1px solid $gray-4;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
-    overscroll-behavior: contain;
-  }
-}
-@include largerThan($huge) {
-  .naviContainer {
-    width: 325px;
-  }
-}
+
 .open {
   height: 100vh;
   @include largerThan($small) {
@@ -207,15 +164,7 @@ export default Vue.extend({
     overflow-y: auto;
   }
 }
-.mainContainer {
-  grid-column: 2/3;
-  overflow: hidden;
-  @include lessThan($small) {
-    .container {
-      padding-top: 16px;
-    }
-  }
-}
+
 .loader {
   height: 200px;
   width: 150px;
@@ -228,9 +177,10 @@ export default Vue.extend({
     margin: 0 auto 20px;
   }
 }
-</style>
-<style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.v-application--is-rtl {
+  &.v-application ul,
+  &.v-application ol {
+    @include padding_start(15px);
+  }
+}
 </style>

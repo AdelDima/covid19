@@ -1,16 +1,18 @@
 <template>
-  <div class="header mb-3 flex flex-column text-center">
-    <h2 class="pageTitle text-3xl sm:text-4xl md:text-5xl xl:text-4xl font-light leading-tight">
-      <v-icon size="40" class="mr-2">
-        {{ icon }}
-      </v-icon>
+  <div class="header mb-3 flex flex-column text-start">
+    <h2
+      class="w-full pageTitle text-3xl sm:text-4xl md:text-5xl xl:text-4xl font-light leading-tight"
+    >
       {{ title }}
     </h2>
-    <div class="date">
+    <div class="date w-full">
       <span>{{ $t('最終更新') }} </span>
       <time :datetime="formattedDate">{{ date }}</time>
     </div>
-    <div v-show="!['ja', 'ja-basic'].includes($i18n.locale)" class="annotation bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4">
+    <div
+      v-show="!['ja', 'ja-basic'].includes($i18n.locale)"
+      class="w-full annotation bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4"
+    >
       <span>{{ $t('注釈') }} </span>
     </div>
   </div>
@@ -44,15 +46,14 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-/*.header {
+.header {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-}*/
+}
 
 .date {
   font-size: 0.875rem;
   color: $gray-3;
 }
-
 </style>

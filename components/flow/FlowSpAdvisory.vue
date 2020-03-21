@@ -16,7 +16,7 @@
         </dt>
         <dd :class="$style.link">
           <a
-            href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
+            href="http://covid19.sante.gov.dz/numeros-utiles/"
             target="_blank"
             rel="noopener"
           >
@@ -48,7 +48,7 @@
             <span :class="$style.icon">
               <PhoneIcon alt="Phone" />
             </span>
-            <a href="tel:0353204592">03-5320-4592</a>
+            <a href="tel:3030">3030</a>
           </div>
         </dd>
       </div>
@@ -106,7 +106,7 @@ export default {
 }
 .night {
   margin: px2vw(30) auto;
-  padding-left: 0 !important;
+  @include padding_start(0 !important);
   text-align: center;
   > li {
     list-style-type: none;

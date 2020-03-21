@@ -91,11 +91,18 @@ const config: Configuration = {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
     '@nuxt/typescript-build',
     '@nuxtjs/google-analytics'
   ],
+  tailwindcss: {
+    configPath: '~/tailwind.config.js',
+    cssPath: '~/assets/css/tailwind.css',
+    purgeCSSInDev: false,
+    exposeConfig: false
+  },
   /*
    ** Nuxt.js modules
    */
@@ -161,10 +168,11 @@ const config: Configuration = {
   generate: {
     fallback: true,
     routes() {
-      const locales = ['ja', 'en', 'zh-cn', 'zh-tw', 'ko', 'ja-basic']
+      const locales = ['ja', 'en', 'ar']
       const pages = [
         '/cards/details-of-confirmed-cases',
         '/cards/number-of-confirmed-cases',
+        '/cards/number-of-confirmed-deaths',
         '/cards/attributes-of-confirmed-cases',
         '/cards/number-of-tested',
         '/cards/number-of-reports-to-covid19-telephone-advisory-center',
@@ -176,7 +184,7 @@ const config: Configuration = {
       const routes: string[] = []
       locales.forEach(locale => {
         pages.forEach(page => {
-          if (locale === 'ja') {
+          if (locale === 'ar') {
             routes.push(page)
             return
           }
@@ -187,9 +195,6 @@ const config: Configuration = {
       return routes
     }
   },
-  // /*
-  // ** hot read configuration for docker
-  // */
   watchers: {
     webpack: {
       poll: true

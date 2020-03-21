@@ -7,7 +7,9 @@
   >
     <span>{{ text }}</span>
     <div v-if="btnText" class="text-end flex-1">
-      <span class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      <span
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+      >
         {{ btnText }}
       </span>
     </div>

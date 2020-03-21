@@ -7,6 +7,7 @@ LANGS="en zh-cn zh-tw ko ja-basic"
 PAGES=$(cat <<EOT
 details-of-confirmed-cases
 number-of-confirmed-cases
+number-of-confirmed-deaths
 attributes-of-confirmed-cases
 number-of-tested
 number-of-reports-to-covid19-telephone-advisory-center

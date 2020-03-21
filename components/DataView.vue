@@ -21,16 +21,6 @@
       >
         <div class="Footer-Left">
           <div>
-            <a
-              v-if="url"
-              class="OpenDataLink text-gray-600"
-              :href="url"
-              target="_blank"
-              rel="noopener"
-            >
-            </a>
-          </div>
-          <div>
             <a class="Permalink" :href="permalink()">
               <time :datetime="formattedDate">
                 {{ $t('{date} 更新', { date }) }}
@@ -225,9 +215,9 @@ export default Vue.extend({
     }
   }
   &-CardText {
-   direction: ltr;
+    direction: ltr;
   }
-  /*  &-DataInfo {
+  &-DataInfo {
     &-summary {
       color: $gray-2;
       font-family: Hiragino Sans;
@@ -247,9 +237,9 @@ export default Vue.extend({
       width: 100%;
       display: inline-block;
     }
- }*/
+  }
 }
-/*.DataView {
+.DataView {
   &-Inner {
     display: flex;
     flex-flow: column;
@@ -407,11 +397,10 @@ export default Vue.extend({
     }
   }
 }
-*/
-/*
+
 textarea {
   font: 400 11px system-ui;
   width: 100%;
   height: 2.4rem;
-}*/
+}
 </style>

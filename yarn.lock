@@ -1594,6 +1594,16 @@
     consola "^2.11.3"
     stylelint-webpack-plugin "^1.2.3"
 
+"@nuxtjs/tailwindcss@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-1.4.0.tgz#351c63659c937213d2e7c47e5ecd0275e0e9f38e"
+  integrity sha512-4ygvQ1GJpV+DWA5FokbImdaAes8gYIJttVnGs5nN+SRJNuGuv5nm0XF7Ww/fO1eDkMfMdvAYMkyaYZ8YZJydDQ==
+  dependencies:
+    consola "^2.11.3"
+    fs-extra "^8.1.0"
+    nuxt-purgecss "^0.2.1"
+    tailwindcss "^1.2.0"
+
 "@nuxtjs/vuetify@^1.0.0":
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/vuetify/-/vuetify-1.11.0.tgz#de8bc9e737479e6c167c2ff45122811362fee7b1"

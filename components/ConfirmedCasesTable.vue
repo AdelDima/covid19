@@ -186,7 +186,7 @@ export default Vue.extend({
 }
 .gutter {
   width: 100%;
-  padding-right: 3px;
+  @include padding_end(3px);
   &.oneThird {
     width: calc(100% / 3);
   }
@@ -279,17 +279,17 @@ export default Vue.extend({
 }
 .item.positive > .gutter > .box::before,
 .item.in-hospital > .gutter > .box::before {
-  border-right: none;
+  @include border-end(none);
   top: -3px;
-  right: calc(-100% - 3px - 3px);
+  @include end(calc(-100% - 3px - 3px));
   width: calc(100% + 3px + 3px);
   border-left: none;
-  border-right: none;
+  @include border-end(none);
 }
 .item.serious > .gutter > .box::before,
 .item.recovered > .gutter > .box::before {
   top: calc(-35px - 3px);
-  right: -3px;
+  @include end(-3px);
   border-left: none;
 }
 .item.serious > .gutter > .box::before {
@@ -304,7 +304,7 @@ export default Vue.extend({
 }
 @mixin variation($vw, $bdw, $fz, $boxh, $boxdiff) {
   .gutter {
-    padding-right: px2vw($bdw, $vw);
+    @include padding_end(px2vw($bdw, $vw));
   }
   .box {
     padding-bottom: px2vw($boxh * 0.17, $vw);
@@ -334,13 +334,13 @@ export default Vue.extend({
   .item.positive > .gutter > .box::before,
   .item.in-hospital > .gutter > .box::before {
     top: px2vw(-$bdw, $vw);
-    right: calc(-100% - #{px2vw($bdw * 2, $vw)} + 0.3px);
+    @include end(calc(-100% - #{px2vw($bdw * 2, $vw)} + 0.3px));
     width: calc(100% + #{px2vw($bdw * 2, $vw)});
   }
   .item.serious > .gutter > .box::before,
   .item.recovered > .gutter > .box::before {
     top: px2vw(-$boxdiff - $bdw, $vw);
-    right: px2vw(-$bdw, $vw);
+    @include end(px2vw(-$bdw, $vw));
   }
 }
 

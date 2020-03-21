@@ -1,9 +1,9 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
     <time-bar-chart
-      :title="$t('陽性患者数')"
-      :title-id="'number-of-confirmed-cases'"
-      :chart-id="'time-bar-chart-patients'"
+      :title="$t('عدد الوفيات المؤكدة')"
+      :title-id="'number-of-confirmed-deaths'"
+      :chart-id="'time-bar-chart-deaths'"
       :chart-data="patientsGraph"
       :date="Data.patients.date"
       :unit="$t('人')"
@@ -22,8 +22,7 @@ export default {
     TimeBarChart
   },
   data() {
-    // 感染者数グラフ
-    const patientsGraph = formatGraph(Data.patients_summary.data)
+    const patientsGraph = formatGraph(Data.deaths_summary.data)
 
     const data = {
       Data,

@@ -7,7 +7,7 @@
     :rel="!isInternalLink(link) ? 'noopener' : ''"
     router
     exact
-    class="ListItem-Container"
+    class="ListItem-Container px-4"
     style="color: transparent"
   >
     <v-list-item-action v-if="icon" class="ListItem-IconContainer">
@@ -26,6 +26,11 @@
       />
       <ParentIcon
         v-else-if="checkIconType(icon) === 'parent'"
+        class="ListItem-Icon"
+        :class="{ isActive: isActive(link) }"
+      />
+      <InfoIcon
+        v-else-if="checkIconType(icon) === 'info'"
         class="ListItem-Icon"
         :class="{ isActive: isActive(link) }"
       />
@@ -118,7 +123,7 @@ export default Vue.extend({
     }
     &:hover {
       color: transparent !important;
-       & .ListItem-Icon {
+      & .ListItem-Icon {
         color: $gray-1 !important;
         &.isActive {
           color: $green-1 !important;
@@ -165,6 +170,9 @@ export default Vue.extend({
     margin-left: 2px;
     color: $gray-3 !important;
   }
+}
+.ListItem-IconContainer {
+  @include margin-end(10px !important);
 }
 .isActive {
   color: $green-1 !important;

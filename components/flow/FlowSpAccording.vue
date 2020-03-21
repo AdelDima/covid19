@@ -269,7 +269,7 @@ export default {
       border-radius: px2vw(6, $vw);
     }
     .note {
-      text-align: left;
+      @include text_align_start();
       margin-top: px2vw(10, $vw);
     }
     .fzXLLarge {

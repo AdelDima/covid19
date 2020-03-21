@@ -14,19 +14,6 @@
       <div class="only-sp">
         <flow-sp />
       </div>
-      <div class="Flow-Card-Button-Wrapper mt-6">
-        <a
-          href="https://www.fukushihoken.metro.tokyo.lg.jp/iryo/kansen/coronasodan.html"
-          target="_blank"
-          rel="noopener"
-          class="Flow-Card-Button"
-        >
-          {{ $t('詳細を見る（東京都福祉保健局）') }}
-          <v-icon class="Flow-Card-Button-ExternalLinkIcon" size="20">
-            mdi-open-in-new
-          </v-icon>
-        </a>
-      </div>
     </div>
   </div>
 </template>
@@ -75,7 +62,7 @@ export default Vue.extend({
       @include font-size(30);
       font-weight: normal;
       color: $gray-2;
-      margin-left: 8px;
+      @include margin_start(10px);
     }
   }
   &-Card-Button {
@@ -97,7 +84,7 @@ export default Vue.extend({
     }
   }
   &-PullRight {
-    margin: 0 0 0 auto;
+    @include margin_start(auto);
   }
 }
 @include largerThan($medium) {

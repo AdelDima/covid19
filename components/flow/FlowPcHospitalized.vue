@@ -28,13 +28,13 @@
     display: flex;
     align-items: center;
     margin: 0 !important;
-    padding: 0 5px 0 0;
+    @include padding_start(5px);
 
     &Icon {
       min-width: 30px;
       min-height: 30px;
       display: block;
-      margin-right: 10px;
+      @include margin_end(10px);
     }
   }
 

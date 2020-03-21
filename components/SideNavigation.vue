@@ -1,48 +1,60 @@
 <template>
-  <div class="SideNavigation">
+  <div
+    class="SideNavigation fixed h-full xl:w-72 sm:w-full bg-white xl:block xl:h-full xl:flex xl:flex-col xl:justify-between"
+  >
     <header class="mt-0">
       <v-icon
-        class="SideNavigation-HeadingIcon pc-none"
+        class="SideNavigation-HeadingIcon pc-none absolute"
         :aria-label="$t('サイドメニュー項目を開く')"
         @click="openNavi"
+        >mdi-menu</v-icon
       >
-        mdi-menu
-      </v-icon>
-      <nuxt-link :to="localePath('/')" class="bg-white flex items-center p-5">
+      <nuxt-link :to="localePath('/')" class="flex items-center p-5">
         <h1 class="mt-4 mb-4 text-gray-600 w-full text-center">
           <div class="Logo">
             <img class="mx-auto" src="/logo.svg" :alt="$t('東京都')" />
           </div>
-          {{ $t('新型コロナウイルス感染症') }}
         </h1>
       </nuxt-link>
     </header>
     <v-divider class="SideNavigation-HeadingDivider" />
-    <div class="sp-none" :class="{ open: isNaviOpen }">
+    <div
+      class="sp-none xl:block xl:h-full xl:flex xl:flex-col xl:justify-between hidden"
+      :class="{ open: isNaviOpen }"
+    >
       <v-icon
         class="SideNavigation-ListContainerIcon pc-none"
         :aria-label="$t('サイドメニュー項目を閉じる')"
         @click="closeNavi"
+        >mdi-close</v-icon
       >
-        mdi-close
-      </v-icon>
-      <nav>
-        <v-list :flat="true">
-          <v-container
+      <nav class="lg:flex xl:block">
+        <v-list>
+          <div
             v-for="(item, i) in items"
             :key="i"
             class="SideNavigation-ListItemContainer"
             @click="closeNavi"
           >
-            <ListItem :link="item.link" :icon="item.icon" :title="item.title" />
-            <v-divider v-show="item.divider" class="SideNavigation-Divider" />
-          </v-container>
+            <ListItem
+              class="text-white"
+              :link="item.link"
+              :icon="item.icon"
+              :title="item.title"
+            />
+          </div>
         </v-list>
+        <!--
         <div class="SideNavigation-LanguageMenu">
           <LanguageSelector />
-        </div>
+        </div>-->
       </nav>
-      <v-footer class="SideNavigation-Footer">
+      <v-divider class="SideNavigation-HeadingDivider" />
+
+      <v-footer
+        class="SideNavigation-Footer bg-gray-900 px-4 py-4 sm:text-right"
+      >
+        <!--
         <div class="flex flex-row">
           <a
             href="https://line.me/R/ti/p/%40822sysfc"
@@ -73,18 +85,16 @@
             <img class="m-2 w-8" src="/github.png" alt="GitHub" />
           </a>
         </div>
+        -->
         <small class="SideNavigation-Copyright">
           {{ $t('このサイトの内容物は') }}
           <a
             rel="license"
             target="_blank"
-            :href="$t('https://creativecommons.org/licenses/by/4.0/deed.ar')"
+            :href="'https://creativecommons.org/licenses/by/4.0/deed.ar'"
+            >{{ $t('クリエイティブ・コモンズ 表示 4.0 ライセンス') }}</a
           >
-            {{ $t('クリエイティブ・コモンズ 表示 4.0 ライセンス') }}
-          </a>
-          {{ $t('の下に提供されています。') }}
           <br />
-          2020 Tokyo Metropolitan Government
         </small>
       </v-footer>
     </div>
@@ -95,7 +105,7 @@
 import Vue from 'vue'
 import { TranslateResult } from 'vue-i18n'
 import ListItem from '@/components/ListItem.vue'
-import LanguageSelector from '@/components/LanguageSelector.vue'
+// import LanguageSelector from '@/components/LanguageSelector.vue'
 
 type Item = {
   icon?: string
@@ -106,8 +116,8 @@ type Item = {
 
 export default Vue.extend({
   components: {
-    ListItem,
-    LanguageSelector
+    ListItem
+    // LanguageSelector
   },
   props: {
     isNaviOpen: {
@@ -134,41 +144,11 @@ export default Vue.extend({
           title: this.$t('お子様をお持ちの皆様へ'),
           link: this.localePath('/parent')
         },
-        /*{
-          icon: 'mdi-account-multiple',
-          title: this.$t('都民の皆様へ'),
-          link: 'https://www.metro.tokyo.lg.jp/tosei/tosei/news/2019-ncov.html'
-        },*/
         {
-          icon: 'mdi-domain',
-          title: this.$t('企業の皆様・はたらく皆様へ'),
-          link: this.localePath('/worker'),
-          divider: true
-        },
-        /*{
-          title: this.$t('東京都新型コロナウイルス感染症対策本部報'),
-          link:
-            'https://www.bousai.metro.tokyo.lg.jp/taisaku/saigai/1007261/index.html'
-        },
-        {
-          title: this.$t('東京都主催等 中止又は延期するイベント等'),
-          link:
-            'https://www.seisakukikaku.metro.tokyo.lg.jp/information/event00.html'
-        },
-        {
-          title: this.$t('知事からのメッセージ'),
-          link:
-            'https://www.metro.tokyo.lg.jp/tosei/governor/governor/katsudo/2020/03/03_00.html'
-        },*/
-        {
+          icon: 'mdi-information-outline',
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')
-        },
-        /*{
-          title: this.$t('東京都公式ホームページ'),
-          link: 'https://www.metro.tokyo.lg.jp/',
-          divider: true
-        }*/
+        }
       ]
     }
   },
@@ -184,7 +164,22 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-/*.SideNavigation {
+.SideNavigation {
+  &-HeadingIcon {
+    position: absolute;
+    font-size: 30px;
+    line-height: 88px;
+    width: 88px;
+  }
+  &-ListContainerIcon {
+    position: relative;
+    font-size: 30px;
+    line-height: 88px;
+    width: 88px;
+  }
+}
+/*
+.SideNavigation {
   position: relative;
   height: 100%;
   background: $white;
@@ -255,7 +250,8 @@ export default Vue.extend({
     color: $gray-1;
     font-weight: bold;
   }
-}*/
+}
+*/
 .open {
   @include lessThan($small) {
     position: fixed;
@@ -287,5 +283,8 @@ export default Vue.extend({
   .sp-none {
     display: none;
   }
+}
+.theme--light.v-list {
+  background: inherit;
 }
 </style>

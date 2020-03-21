@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 0 !important; // FIXME: for ul element
+  @include padding_start(0 !important);
 }
 .actionsList {
   list-style-type: none;
@@ -85,11 +85,11 @@
     min-width: 30px;
     min-height: 30px;
     display: block;
-    margin-right: 10px;
+    @include margin_end(10px);
   }
 }
 .icon {
-  margin-right: 10px;
+  @include margin_end(10px);
 }
 .nextAction {
   width: 49%;

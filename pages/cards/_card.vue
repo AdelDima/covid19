@@ -12,6 +12,9 @@
     <tested-number-card
       v-else-if="this.$route.params.card == 'number-of-tested'"
     />
+    <confirmed-deaths-number-card
+      v-else-if="this.$route.params.card == 'number-of-confirmed-deaths'"
+    />
     <telephone-advisory-reports-number-card
       v-else-if="
         this.$route.params.card ==
@@ -37,10 +40,11 @@
 import Data from '@/data/data.json'
 import MetroData from '@/data/metro.json'
 import agencyData from '@/data/agency.json'
-import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
+// import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
+import ConfirmedDeathsNumberCard from '@/components/cards/ConfirmedDeathsNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
-import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
+// import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
 import MetroCard from '@/components/cards/MetroCard.vue'
@@ -48,10 +52,11 @@ import AgencyCard from '@/components/cards/AgencyCard.vue'
 
 export default {
   components: {
-    ConfirmedCasesDetailsCard,
+    // ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
+    ConfirmedDeathsNumberCard,
     ConfirmedCasesAttributesCard,
-    TestedNumberCard,
+    // TestedNumberCard,
     TelephoneAdvisoryReportsNumberCard,
     ConsultationDeskReportsNumberCard,
     MetroCard,
@@ -68,6 +73,11 @@ export default {
         title = this.$t('陽性患者数')
         updatedAt = Data.patients.date
         break
+      case 'number-of-confirmed-deaths':
+        title = this.$t('陽性患者数')
+        updatedAt = Data.patients.date
+        break
+
       case 'attributes-of-confirmed-cases':
         title = this.$t('陽性患者の属性')
         updatedAt = Data.patients.date

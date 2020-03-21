@@ -18,6 +18,7 @@
         <flow-pc-advisory2 />
       </div>
     </div>
+    <!--
     <h3>
       <i18n
         :class="$style.TitleSmall"
@@ -51,7 +52,7 @@
           '※保険適用となる検査は、当面の間、院内感染防止等の観点から、「帰国者・接触者外来」等の医療機関で実施'
         )
       }}
-    </p>
+    </p>-->
   </div>
 </template>
 
@@ -61,10 +62,10 @@ import FlowPcDays from './FlowPcDays.vue'
 import FlowPcSuspect from './FlowPcSuspect.vue'
 import FlowPcAdvisory from './FlowPcAdvisory.vue'
 import FlowPcAdvisory2 from './FlowPcAdvisory2.vue'
-import FlowPcRequired from './FlowPcRequired.vue'
-import FlowPcPcr from './FlowPcPcr.vue'
-import FlowPcNotRequired from './FlowPcNotRequired.vue'
-import FlowPcHospitalized from './FlowPcHospitalized.vue'
+// import FlowPcRequired from './FlowPcRequired.vue'
+// import FlowPcPcr from './FlowPcPcr.vue'
+// import FlowPcNotRequired from './FlowPcNotRequired.vue'
+// import FlowPcHospitalized from './FlowPcHospitalized.vue'
 
 export default {
   components: {
@@ -72,11 +73,11 @@ export default {
     FlowPcDays,
     FlowPcSuspect,
     FlowPcAdvisory,
-    FlowPcAdvisory2,
-    FlowPcRequired,
-    FlowPcPcr,
-    FlowPcNotRequired,
-    FlowPcHospitalized
+    FlowPcAdvisory2
+    // FlowPcRequired,
+    // FlowPcPcr,
+    // FlowPcNotRequired,
+    // FlowPcHospitalized
   }
 }
 </script>
@@ -172,7 +173,11 @@ export default {
 .CardBlock {
   position: relative;
   &::after {
-    content: url('/flow/flow_arrow.svg');
+    @if ($global-direction== 'rtl') {
+      content: url('/flow/flow_arrow_rtl.svg');
+    } @else {
+      content: url('/flow/flow_arrow.svg');
+    }
     position: absolute;
     bottom: 40%;
     @include end(-30px);
@@ -187,11 +192,19 @@ export default {
   &Required::after {
     bottom: -30px;
     @include end(auto);
-    left: 22%;
-    transform: rotate(90deg);
+    @include start(22%);
+    @if ($global-direction== 'rtl') {
+      transform: rotate(-90deg);
+    } @else {
+      transform: rotate(90deg);
+    }
   }
   &Required::before {
-    content: url('/flow/flow_arrow.svg');
+    @if ($global-direction== 'rtl') {
+      content: url('/flow/flow_arrow_rtl.svg');
+    } @else {
+      content: url('/flow/flow_arrow.svg');
+    }
     position: absolute;
     bottom: 12%;
     @include end(-30px);
@@ -206,7 +219,11 @@ export default {
     transform: rotateZ(-30deg);
   }
   &Pcr::before {
-    content: url('/flow/flow_arrow.svg');
+    @if ($global-direction== 'rtl') {
+      content: url('/flow/flow_arrow_rtl.svg');
+    } @else {
+      content: url('/flow/flow_arrow.svg');
+    }
     position: absolute;
     bottom: 15%;
     @include end(-30px);
@@ -220,10 +237,18 @@ export default {
 .Advisory {
   position: relative;
   &::after {
-    content: url('/flow/flow_arrow.svg');
+    @if ($global-direction== 'rtl') {
+      content: url('/flow/flow_arrow_rtl.svg');
+    } @else {
+      content: url('/flow/flow_arrow.svg');
+    }
     position: absolute;
     @include start(calc(50% - 23px));
-    transform: rotate(-90deg);
+    @if ($global-direction== 'rtl') {
+      transform: rotate(90deg);
+    } @else {
+      transform: rotate(-90deg);
+    }
     z-index: 1;
     display: block;
     width: 46px;

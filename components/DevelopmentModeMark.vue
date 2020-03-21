@@ -1,7 +1,7 @@
 <template>
   <div v-if="isDevelopmentMode" class="DevelopmentModeMark">
     Development Mode
-    </div>
+  </div>
 </template>
 
 <style lang="scss">

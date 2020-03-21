@@ -164,7 +164,7 @@
       }
       &CareTargetList {
         margin: 16px 0;
-        text-align: left;
+        @include text_align_start();
         list-style: none;
         &Item + &Item {
           margin-top: 14px;
@@ -213,7 +213,7 @@
 
       &Icon {
         position: absolute;
-        left: -8px;
+        @include start(-8px);
         top: -8px;
         width: 24px;
         height: 24px;
@@ -221,7 +221,7 @@
 
       &::before {
         position: absolute;
-        left: -4px;
+        @include start(-4px);
         top: -4px;
         width: 20px;
         height: 20px;

@@ -16,6 +16,39 @@
         )
       }}
     </TextCard>
+    <TextCard :title="$t('حول تطوير الموقع')">
+      <p>
+        تعديل وتطوير الموقع من طرف
+        <a
+          target="_blank"
+          rel="noopener"
+          place="githubRepo"
+          href="https://www.linkedin.com/in/adel-tahri-09335169/"
+          >عادل طاهري</a
+        >
+      </p>
+      <p>
+        ترجمة
+        <a
+          target="_blank"
+          rel="noopener"
+          place="githubRepo"
+          href="https://www.linkedin.com/in/salma-gueddouh/"
+          >Salma GUEDDOUH</a
+        >
+      </p>
+      <p>
+        الموقع إعتمد على
+        <a
+          target="_blank"
+          rel="noopener"
+          place="githubRepo"
+          href="https://stopcovid19.metro.tokyo.lg.jp/"
+          >Tokyo COVID-19 Task Force website</a
+        >
+        بموجب الرخصة الدولية للمشاع الإبداعي 4.0
+      </p>
+    </TextCard>
     <TextCard :title="$t('ブラウザ環境について')">
       {{ $t('当サイトは以下の環境でご覧いただくことを推奨いたします。') }}<br />
       <br />
@@ -92,7 +125,7 @@
       <ul>
         <li>
           <a
-            href="https://marketingplatform.google.com/about/analytics/terms/jp"
+            href="https://marketingplatform.google.com/about/analytics/terms/US"
             target="_blank"
             rel="noopener"
           >
@@ -101,7 +134,7 @@
         </li>
         <li>
           <a
-            href="https://policies.google.com/privacy?hl=ja"
+            href="https://policies.google.com/privacy?hl=ar"
             target="_blank"
             rel="noopener"
           >
@@ -110,7 +143,7 @@
         </li>
         <li>
           <a
-            href="https://support.google.com/analytics/answer/6004245"
+            href="https://support.google.com/analytics/answer/2838718?hl=ar"
             target="_blank"
             rel="noopener"
           >
@@ -120,12 +153,6 @@
       </ul>
     </TextCard>
     <TextCard :title="$t('免責事項')">
-      {{
-        $t(
-          '当サイトに掲載されている情報の正確性については万全を期していますが、東京都は利用者が当サイトの情報を用いて行う一切の行為について責任を負うものではありません。'
-        )
-      }}<br />
-      <br />
       {{
         $t(
           'また、利用者が当サイトを利用したことにより発生した利用者の損害及び利用者が第三者に与えた損害に対して、責任を負うものではありません。'
@@ -138,42 +165,12 @@
         )
       }}
     </TextCard>
-    <TextCard :title="$t('データについて')">
-      <i18n
-        tag="p"
-        path="本サイトで公表しているデータは、{catalogWebsite}より誰でも自由にダウンロードが可能です。（データは順次追加予定です）"
-      >
-        <a
-          href="https://portal.data.metro.tokyo.lg.jp/"
-          target="_blank"
-          rel="noopener"
-          place="catalogWebsite"
-        >
-          {{ $t('東京都オープンデータカタログサイト') }}
-        </a>
-      </i18n>
-    </TextCard>
     <TextCard :title="$t('ソースコードについて')">
       {{
         $t(
           '当サイトのソースコードはMITライセンスで公開されており、誰でも自由に利用することができます。'
         )
       }}
-      <i18n path="詳しくは、{githubRepo}をご確認ください。">
-        <a
-          href="https://github.com/tokyo-metropolitan-gov/covid19"
-          target="_blank"
-          rel="noopener"
-          place="githubRepo"
-        >
-          {{ $t('GitHub リポジトリ') }}
-        </a>
-      </i18n>
-    </TextCard>
-    <TextCard :title="$t('お問い合わせ先（都のHPサイトポリシーについて）')">
-      {{ $t('東京都生活文化局広報広聴部広報課') }}<br />
-      {{ $t('電話') }}:
-      <a href="tel:03-5388-3085">03-5388-3085</a>
     </TextCard>
   </div>
 </template>

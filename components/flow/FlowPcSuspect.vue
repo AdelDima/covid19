@@ -3,7 +3,7 @@
     <div :class="[$style.SubtleBox, $style.Box1]">
       <img
         :class="$style.Box1Icon"
-        src="/flow/flow_arrow.svg"
+        src="/flow/flow_arrow_rtl.svg"
         aria-hidden="true"
       />
       <div :class="$style.RowItems">
@@ -47,20 +47,6 @@
     <div :class="[$style.SubtleBox, $style.Box2, $style.Center]">
       <div :class="$style.LargerText">
         {{ $t('新型コロナコールセンター') }}
-      </div>
-      <div :class="$style.SmallerText">
-        {{ $t('午前9時から午後9時（土日祝含む）') }}
-      </div>
-
-      <div :class="$style.Tel">
-        <a :class="$style.TelLink" href="tel:0570550571">
-          <img
-            :class="$style.TelLinkIcon"
-            src="/flow/phone-24px.svg"
-            aria-hidden="true"
-          />
-          0570-550571
-        </a>
       </div>
     </div>
   </div>
@@ -115,7 +101,7 @@
 
   &Icon {
     position: absolute;
-    left: -8px;
+    @include start(-8px);
     top: -8px;
     width: 24px;
     height: 24px;
@@ -123,7 +109,7 @@
 
   &::before {
     position: absolute;
-    left: -4px;
+    @include start(-4px);
     top: -4px;
     width: 20px;
     height: 20px;
@@ -149,7 +135,7 @@
   &Icon {
     position: absolute;
     bottom: 40%;
-    right: -30px;
+    @include end(-30px);
     z-index: 1;
     display: block;
     width: 46px;

@@ -4,10 +4,10 @@
     "reportVersion": 2,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200318.214844.4295.0.001.json",
-    "dumpEventTime": "2020-03-18T21:48:44Z",
-    "dumpEventTimeStamp": "1584564524009",
-    "processId": 4295,
+    "filename": "report.20200320.125722.7502.0.001.json",
+    "dumpEventTime": "2020-03-20T12:57:22Z",
+    "dumpEventTimeStamp": "1584705442770",
+    "processId": 7502,
     "threadId": null,
     "cwd": "/Volumes/os_hdd/Projects/Code/github/covid19",
     "commandLine": [
@@ -48,37 +48,37 @@
       {
         "model": "Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz",
         "speed": 3400,
-        "user": 1637370,
+        "user": 5694820,
         "nice": 0,
-        "sys": 586160,
-        "idle": 4165500,
+        "sys": 1539850,
+        "idle": 10614070,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz",
         "speed": 3400,
-        "user": 1624570,
+        "user": 5657230,
         "nice": 0,
-        "sys": 556900,
-        "idle": 4207010,
+        "sys": 1442140,
+        "idle": 10748810,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz",
         "speed": 3400,
-        "user": 1544950,
+        "user": 5386590,
         "nice": 0,
-        "sys": 497100,
-        "idle": 4346420,
+        "sys": 1327990,
+        "idle": 11133610,
         "irq": 0
       },
       {
         "model": "Intel(R) Core(TM) i5-3570 CPU @ 3.40GHz",
         "speed": 3400,
-        "user": 1444630,
+        "user": 5144740,
         "nice": 0,
-        "sys": 452670,
-        "idle": 4491180,
+        "sys": 1233630,
+        "idle": 11469820,
         "irq": 0
       }
     ],
@@ -113,7 +113,7 @@
         "name": "en0",
         "internal": false,
         "mac": "d4:3d:7e:35:a1:28",
-        "address": "fe80::8ac:dc3a:bf86:a60a",
+        "address": "fe80::1c3a:7f6b:ce48:aad8",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 7
@@ -122,7 +122,7 @@
         "name": "en0",
         "internal": false,
         "mac": "d4:3d:7e:35:a1:28",
-        "address": "192.168.1.104",
+        "address": "192.168.1.4",
         "netmask": "255.255.255.0",
         "family": "IPv4"
       },
@@ -130,7 +130,7 @@
         "name": "utun0",
         "internal": false,
         "mac": "00:00:00:00:00:00",
-        "address": "fe80::6c80:4468:4bd4:7031",
+        "address": "fe80::7265:90b3:fba9:eeb7",
         "netmask": "ffff:ffff:ffff:ffff::",
         "family": "IPv6",
         "scopeid": 8
@@ -190,35 +190,19 @@
       "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/local/Cellar/node/13.11.0/bin/node]"
     },
     {
-      "pc": "0x00000001004ed6bb",
-      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/Cellar/node/13.11.0/bin/node]"
+      "pc": "0x00000001004edae1",
+      "symbol": "v8::internal::Runtime_AllocateInOldGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/Cellar/node/13.11.0/bin/node]"
     },
     {
       "pc": "0x000000010075fa19",
       "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/usr/local/Cellar/node/13.11.0/bin/node]"
-    },
-    {
-      "pc": "0x00000001006e817a",
-      "symbol": "Builtins_FastNewClosure [/usr/local/Cellar/node/13.11.0/bin/node]"
-    },
-    {
-      "pc": "0x00000001007cfaa4",
-      "symbol": "Builtins_CreateClosureHandler [/usr/local/Cellar/node/13.11.0/bin/node]"
-    },
-    {
-      "pc": "0x00000001006ebb9b",
-      "symbol": "Builtins_InterpreterEntryTrampoline [/usr/local/Cellar/node/13.11.0/bin/node]"
-    },
-    {
-      "pc": "0x00000001006ebb9b",
-      "symbol": "Builtins_InterpreterEntryTrampoline [/usr/local/Cellar/node/13.11.0/bin/node]"
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2151489536,
-    "totalCommittedMemory": 2149978928,
-    "usedMemory": 2128043200,
-    "availableMemory": 48374592,
+    "totalMemory": 2171432960,
+    "totalCommittedMemory": 2160549144,
+    "usedMemory": 2142601496,
+    "availableMemory": 39693032,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -229,38 +213,38 @@
         "available": 0
       },
       "new_space": {
-        "memorySize": 2097152,
-        "committedMemory": 1206528,
-        "capacity": 1047424,
-        "used": 156912,
-        "available": 890512
+        "memorySize": 12582912,
+        "committedMemory": 2438144,
+        "capacity": 6284544,
+        "used": 575040,
+        "available": 5709504
       },
       "old_space": {
-        "memorySize": 1054224384,
-        "committedMemory": 1053969408,
-        "capacity": 1045437680,
-        "used": 1045326784,
-        "available": 110896
+        "memorySize": 1768828928,
+        "committedMemory": 1768552776,
+        "capacity": 1763125088,
+        "used": 1761808440,
+        "available": 1316648
       },
       "code_space": {
-        "memorySize": 5410816,
-        "committedMemory": 5275840,
-        "capacity": 4705536,
-        "used": 4705536,
+        "memorySize": 5672960,
+        "committedMemory": 5440384,
+        "capacity": 5045536,
+        "used": 5045536,
         "available": 0
       },
       "map_space": {
-        "memorySize": 19140608,
-        "committedMemory": 19139392,
-        "capacity": 8665040,
-        "used": 8665040,
+        "memorySize": 23859200,
+        "committedMemory": 23857696,
+        "capacity": 15548160,
+        "used": 15548160,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 1068822528,
-        "committedMemory": 1068822528,
-        "capacity": 1067746192,
-        "used": 1067746192,
+        "memorySize": 358694912,
+        "committedMemory": 358694912,
+        "capacity": 358181584,
+        "used": 358181584,
         "available": 0
       },
       "code_large_object_space": {
@@ -273,20 +257,20 @@
       "new_large_object_space": {
         "memorySize": 0,
         "committedMemory": 0,
-        "capacity": 1047424,
+        "capacity": 6284544,
         "used": 0,
-        "available": 1047424
+        "available": 6284544
       }
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 431.616,
-    "kernelCpuSeconds": 146.469,
-    "cpuConsumptionPercent": 42.7261,
-    "maxRss": 2670916009984,
+    "userCpuSeconds": 3531.79,
+    "kernelCpuSeconds": 501.868,
+    "cpuConsumptionPercent": 67.8839,
+    "maxRss": 2184875868160,
     "pageFaults": {
-      "IORequired": 7,
-      "IONotRequired": 4284494
+      "IORequired": 27,
+      "IONotRequired": 25600286
     },
     "fsActivity": {
       "reads": 0,
@@ -307,17 +291,17 @@
     "INIT_CWD": "/Volumes/os_hdd/Projects/Code/github/covid19",
     "npm_package_dependencies_vue_scrollto": "^2.17.1",
     "npm_package_devDependencies_jest": "^24.1.0",
-    "SHELL": "/bin/zsh",
     "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh",
     "npm_package_devDependencies_rimraf": "^3.0.2",
     "TMPDIR": "/var/folders/p3/591l0qq51mb56_jjrnmmnhtr0000gn/T/",
     "npm_config_init_license": "MIT",
     "npm_package_scripts_lint": "eslint './**/*.{js,ts,vue}'",
     "npm_package_dependencies__nuxtjs_axios": "^5.3.6",
-    "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.Anwq5nPfAb/Render",
     "CONDA_SHLVL": "1",
-    "TERM_PROGRAM_VERSION": "3.3.9",
+    "Apple_PubSub_Socket_Render": "/private/tmp/com.apple.launchd.lamE28eA4r/Render",
     "CONDA_PROMPT_MODIFIER": "(base) ",
+    "TERM_PROGRAM_VERSION": "3.3.9",
     "npm_package_scripts_dev": "cross-env NODE_ENV=development nuxt-ts",
     "npm_package_lint_staged____js_ts_css_vue__0": "eslint --fix",
     "npm_package_devDependencies__nuxt_typescript_build": "^0.6.0",
@@ -330,11 +314,10 @@
     "npm_package_scripts_generate": "eslint './**/*.{js,ts,vue}' && nuxt-ts generate",
     "npm_package_devDependencies__nuxtjs_stylelint_module": "^3.2.2",
     "npm_package_devDependencies__types_chart_js": "^2.9.14",
-    "ZSH": "/Users/adeldima/.oh-my-zsh",
     "LC_ALL": "en_US.UTF-8",
+    "ZSH": "/Users/adeldima/.oh-my-zsh",
     "npm_package_dependencies_dayjs": "^1.8.21",
     "npm_package_readmeFilename": "README.md",
-    "npm_config_python": "/usr/bin/python",
     "npm_package_description": "東京都 新型コロナウイルス感染症対策サイト",
     "npm_package_lint_staged____css_scss_vue_": "stylelint",
     "USER": "adeldima",
@@ -348,13 +331,13 @@
     "npm_package_devDependencies_babel_jest": "^24.1.0",
     "npm_package_dependencies__nuxt_typescript_runtime": "^0.4.0",
     "npm_package_devDependencies__nuxtjs_vuetify": "^1.0.0",
-    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.rkHtcUeO51/Listeners",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.OLrNcWxaG9/Listeners",
     "npm_package_devDependencies_eslint": "^6.8.0",
     "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
     "npm_package_husky_hooks_pre_commit": "lint-staged",
-    "npm_execpath": "/usr/local/Cellar/yarn/1.15.2/libexec/bin/yarn.js",
-    "PAGER": "less",
+    "npm_execpath": "/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/yarn/bin/yarn.js",
     "VIRTUAL_ENV_DISABLE_PROMPT": "true",
+    "PAGER": "less",
     "npm_package_author_name": "東京都",
     "npm_package_devDependencies__fullhuman_postcss_purgecss": "^2.1.0",
     "DOTFILES": "/Users/adeldima/.dotfiles//zsh",
@@ -363,7 +346,7 @@
     "npm_package_devDependencies__nuxtjs_google_analytics": "^2.2.3",
     "npm_package_scripts_lint_fix": "eslint './**/*.{js,ts,vue}' --fix",
     "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"dev\"]}",
-    "PATH": "/var/folders/p3/591l0qq51mb56_jjrnmmnhtr0000gn/T/yarn--1584563169656-0.6025548428092395:/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/.bin:/Users/adeldima/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node/13.11.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.11.0/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.11.0/bin/node_modules/npm/bin/node-gyp-bin:/Volumes/os_hdd/Anaconda/anaconda3/bin:/Volumes/os_hdd/Anaconda/anaconda3/condabin:node_modules/.bin:vendor/bin:/Users/adeldima/.node/bin:/Users/adeldima/.composer/vendor/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin",
+    "PATH": "/var/folders/p3/591l0qq51mb56_jjrnmmnhtr0000gn/T/yarn--1584699499365-0.24516827126918206:/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/.bin:/Users/adeldima/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node/13.11.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.11.0/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node/13.11.0/bin/node_modules/npm/bin/node-gyp-bin:/Volumes/os_hdd/Anaconda/anaconda3/bin:/Volumes/os_hdd/Anaconda/anaconda3/condabin:node_modules/.bin:vendor/bin:/Users/adeldima/.node/bin:/Users/adeldima/.composer/vendor/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin",
     "_": "/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/.bin/cross-env",
     "CONDA_PREFIX": "/Volumes/os_hdd/Anaconda/anaconda3",
     "PWD": "/Volumes/os_hdd/Projects/Code/github/covid19",
@@ -390,11 +373,11 @@
     "npm_package_devDependencies_eslint_config_prettier": "^6.10.0",
     "npm_package_version": "1.0.0",
     "npm_package_dependencies_chart_js": "^2.9.3",
-    "XPC_SERVICE_NAME": "0",
     "SPACESHIP_ROOT": "/Users/adeldima/.dotfiles/zsh/themes/spaceship-prompt",
-    "COLORFGBG": "15;0",
-    "HOME": "/Users/adeldima",
+    "XPC_SERVICE_NAME": "0",
     "SHLVL": "2",
+    "HOME": "/Users/adeldima",
+    "COLORFGBG": "15;0",
     "npm_package_scripts_test": "echo 'skip tests (there is no test)'",
     "npm_config_strict_ssl": "true",
     "npm_config_save_prefix": "^",
@@ -403,23 +386,22 @@
     "npm_package_devDependencies_husky": "^4.2.3",
     "npm_package_dependencies_nuxt_i18n": "^6.6.0",
     "npm_package_devDependencies_vue_jest": "^4.0.0-0",
-    "NPM_CONFIG_PYTHON": "/usr/bin/python",
+    "npm_package_dependencies__nuxtjs_tailwindcss": "^1.4.0",
     "ITERM_SESSION_ID": "w0t1p0:E9FDACA5-B4A6-43A4-A3EC-C2921DC2EE6D",
     "YARN_WRAP_OUTPUT": "false",
-    "LOGNAME": "adeldima",
-    "LESS": "-R",
     "CONDA_PYTHON_EXE": "/Volumes/os_hdd/Anaconda/anaconda3/bin/python",
+    "LESS": "-R",
+    "LOGNAME": "adeldima",
     "npm_lifecycle_script": "cross-env NODE_ENV=development nuxt-ts",
-    "PREFIX": "/usr/local",
     "LC_CTYPE": "UTF-8",
     "CONDA_DEFAULT_ENV": "base",
-    "npm_config_user_agent": "yarn/1.15.2 npm/? node/v13.11.0 darwin x64",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v13.11.0 darwin x64",
     "npm_config_ignore_scripts": "",
     "npm_config_version_git_sign": "",
     "npm_package_scripts_clean_hardsource": "rimraf ./node_modules/.cache/hard-source",
     "npm_package_dependencies_nuxt": "^2.11.0",
-    "DISPLAY": "/private/tmp/com.apple.launchd.Zcrwa9saT6/org.macosforge.xquartz:0",
     "LC_TERMINAL": "iTerm2",
+    "DISPLAY": "/private/tmp/com.apple.launchd.CgSSAmceKm/org.macosforge.xquartz:0",
     "npm_package_dependencies_express": "^4.16.4",
     "npm_package_devDependencies__mdi_font": "^5.0.45",
     "npm_config_ignore_optional": "",
@@ -429,6 +411,7 @@
     "SECURITYSESSIONID": "186a7",
     "npm_package_devDependencies_nodemon": "^1.18.9",
     "npm_config_version_tag_prefix": "v",
+    "npm_package_dependencies_netlify_cli": "^2.40.0",
     "npm_node_execpath": "/usr/local/Cellar/node/13.11.0/bin/node",
     "COLORTERM": "truecolor",
     "_AXIOS_BASE_URL_": "http://localhost:3000/",
@@ -666,7 +649,7 @@
     "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement",
     "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Versions/A/BackgroundTaskManagement",
     "/usr/lib/libxslt.1.dylib",
-    "/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/fsevents/build/Release/fse.node",
-    "/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/fibers/bin/darwin-x64-79/fibers.node"
+    "/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/fibers/bin/darwin-x64-79/fibers.node",
+    "/Volumes/os_hdd/Projects/Code/github/covid19/node_modules/fsevents/build/Release/fse.node"
   ]
 }

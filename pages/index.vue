@@ -17,6 +17,7 @@
       <confirmed-cases-number-card />
       <confirmed-cases-attributes-card />
       <tested-number-card />
+      <confirmed-deaths-number-card />
       <telephone-advisory-reports-number-card />
       <consultation-desk-reports-number-card />
       <metro-card />
@@ -29,32 +30,27 @@
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import PageHeader from '@/components/PageHeader.vue'
-//import WhatsNew from '@/components/WhatsNew.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
-import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
-//import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
-//import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
-//import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
-//import MetroCard from '@/components/cards/MetroCard.vue'
-//import AgencyCard from '@/components/cards/AgencyCard.vue'
+import ConfirmedDeathsNumberCard from '@/components/cards/ConfirmedDeathsNumberCard.vue'
+// import WhatsNew from '@/components/WhatsNew.vue'
+// import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
+// import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
+// import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
+// import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
+// import MetroCard from '@/components/cards/MetroCard.vue'
+// import AgencyCard from '@/components/cards/AgencyCard.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
-    //WhatsNew,
     StaticInfo,
-    //ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    //TestedNumberCard,
-    //TelephoneAdvisoryReportsNumberCard,
-    //ConsultationDeskReportsNumberCard,
-    //MetroCard,
-    //AgencyCard
+    ConfirmedDeathsNumberCard
   },
   data() {
     const data = {

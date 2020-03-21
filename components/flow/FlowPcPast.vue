@@ -44,7 +44,7 @@
         </template>
       </div>
       <div :class="$style.FlowItem">
-        <template v-if="!langsWithoutFlowTitle.includes($i18n.locale)">
+        <template v-if="langsWithoutFlowTitle.includes($i18n.locale)">
           <strong :class="$style.FlowTitle">
             {{ $t('流行地域への渡航・居住歴がある方') }}
           </strong>
@@ -202,9 +202,6 @@ export default {
   &Line {
     border-bottom: 2px solid $green-1;
     font-style: inherit;
-    @include largerThan($large) {
-      border-width: 4px;
-    }
   }
   &Condition {
     display: flex;
