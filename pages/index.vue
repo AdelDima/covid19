@@ -17,10 +17,6 @@
       <confirmed-recovered-number-card />
       <states-card />
       <confirmed-deaths-number-card />
-      <telephone-advisory-reports-number-card />
-      <consultation-desk-reports-number-card />
-      <metro-card />
-      <agency-card />
     </v-row>
   </div>
 </template>
@@ -33,7 +29,6 @@ import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
-// import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import ConfirmedDeathsNumberCard from '@/components/cards/ConfirmedDeathsNumberCard.vue'
 import ConfirmedRecoveredNumberCard from '@/components/cards/ConfirmedRecoveredNumberCard.vue'
 import StatesCard from '@/components/cards/StatesCard.vue'
