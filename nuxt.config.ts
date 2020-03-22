@@ -21,7 +21,7 @@ const config: Configuration = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://pixeldima.com'
+        content: 'https://covid19-dz.live'
       },
       {
         hid: 'twitter:card',

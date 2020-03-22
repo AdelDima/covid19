@@ -32,7 +32,7 @@
                 {{ $t('※最新の情報はWebページをご覧ください') }}
               </p>
               <p class="PrintMeta-Link">
-                https://covid19-dz.netlify.com/
+                https://covid19-dz.live/
               </p>
             </v-card>
           </v-card>

@@ -26,9 +26,3 @@ version 1.0, 2020/3/3
 
 * Open source: We will release most of our source codes and knowledge used to develop this website for free, to encourage other local authorities to utilise them.
 * Open data: We will release the data for free in reusable data form, which is available for everyone.
-
-## Build with people
-
-* We will work together not only with Tokyo Metropolitan Government, but also with anyone who wants to contribute.
-* We will welcome any citizens' contributions.
-* We will continue improving this website with someone who needs information.
