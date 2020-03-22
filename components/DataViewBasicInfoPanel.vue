@@ -1,5 +1,5 @@
 <template>
-  <div class="DataView-DataInfo dima-text-end">
+  <div class="DataView-DataInfo sm:w-full sm:text-center xl:text-left">
     <span class="DataView-DataInfo-summary">
       {{ lText }}
       <small class="DataView-DataInfo-summary-unit">{{ unit }}</small>

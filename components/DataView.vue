@@ -5,7 +5,7 @@
     <div class="DataView-Inner">
       <div class="DataView-Header">
         <h3
-          class="DataView-Title w-2/4"
+          class="DataView-Title w-2/4 sm:text-center md:text-right"
           :class="!!$slots.infoPanel ? 'with-infoPanel' : ''"
         >
           {{ title }}
