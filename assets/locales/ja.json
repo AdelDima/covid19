@@ -136,7 +136,6 @@
   "新型コロナウイルス感染症": "新型コロナウイルス感染症",
   "対策サイト": "対策サイト",
   "最終更新": "最終更新",
-  "注釈": "This is a provisional translation. Please be aware that there may be mistranslations.",
   "print": "印刷",
   "サイドメニュー項目を開く": "サイドメニュー項目を開く",
   "サイドメニュー項目を閉じる": "サイドメニュー項目を閉じる",
@@ -235,6 +234,6 @@
   "2次元コード": "2次元コード",
   "※最新の情報はWebページをご覧ください": "※最新の情報はWebページをご覧ください",
   "ogp": {
-    "og:image": "https://stopcovid19.metro.tokyo.lg.jp/ogp.png"
+    "og:image": "https://covid19-dz.netlify.com/ogp.png"
   }
 }

@@ -16,39 +16,6 @@
         )
       }}
     </TextCard>
-    <TextCard :title="$t('حول تطوير الموقع')">
-      <p>
-        تعديل وتطوير الموقع من طرف
-        <a
-          target="_blank"
-          rel="noopener"
-          place="githubRepo"
-          href="https://www.linkedin.com/in/adel-tahri-09335169/"
-          >عادل طاهري</a
-        >
-      </p>
-      <p>
-        ترجمة
-        <a
-          target="_blank"
-          rel="noopener"
-          place="githubRepo"
-          href="https://www.linkedin.com/in/salma-gueddouh/"
-          >Salma GUEDDOUH</a
-        >
-      </p>
-      <p>
-        الموقع إعتمد على
-        <a
-          target="_blank"
-          rel="noopener"
-          place="githubRepo"
-          href="https://stopcovid19.metro.tokyo.lg.jp/"
-          >Tokyo COVID-19 Task Force website</a
-        >
-        بموجب الرخصة الدولية للمشاع الإبداعي 4.0
-      </p>
-    </TextCard>
     <TextCard :title="$t('ブラウザ環境について')">
       {{ $t('当サイトは以下の環境でご覧いただくことを推奨いたします。') }}<br />
       <br />
@@ -172,6 +139,40 @@
         )
       }}
     </TextCard>
+    <!--
+    <TextCard :title="$t('حول تطوير الموقع')">
+      <p>
+        تعديل وتطوير الموقع من طرف
+        <a
+          target="_blank"
+          rel="noopener"
+          place="githubRepo"
+          href="https://www.linkedin.com/in/adel-tahri-09335169/"
+          >عادل طاهري</a
+        >
+      </p>
+      <p>
+        ترجمة
+        <a
+          target="_blank"
+          rel="noopener"
+          place="githubRepo"
+          href="https://www.linkedin.com/in/salma-gueddouh/"
+          >Salma GUEDDOUH</a
+        >
+      </p>
+      <p>
+        الموقع إعتمد على
+        <a
+          target="_blank"
+          rel="noopener"
+          place="githubRepo"
+          href="https://stopcovid19.metro.tokyo.lg.jp/"
+          >Tokyo COVID-19 Task Force website</a
+        >
+        بموجب الرخصة الدولية للمشاع الإبداعي 4.0
+      </p>
+    </TextCard> -->
   </div>
 </template>
 

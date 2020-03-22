@@ -12,8 +12,14 @@
     <tested-number-card
       v-else-if="this.$route.params.card == 'number-of-tested'"
     />
+    <states-card
+      v-else-if="this.$route.params.card == 'states-of-confirmed-cases'"
+    />
     <confirmed-deaths-number-card
       v-else-if="this.$route.params.card == 'number-of-confirmed-deaths'"
+    />
+    <confirmed-recovered-number-card
+      v-else-if="this.$route.params.card == 'number-of-confirmed-recovered'"
     />
     <telephone-advisory-reports-number-card
       v-else-if="
@@ -43,7 +49,9 @@ import agencyData from '@/data/agency.json'
 // import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedDeathsNumberCard from '@/components/cards/ConfirmedDeathsNumberCard.vue'
-import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
+import ConfirmedRecoveredNumberCard from '@/components/cards/ConfirmedRecoveredNumberCard.vue'
+
+// import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 // import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
 import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDeskReportsNumberCard.vue'
@@ -55,7 +63,8 @@ export default {
     // ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedDeathsNumberCard,
-    ConfirmedCasesAttributesCard,
+    ConfirmedRecoveredNumberCard,
+    // ConfirmedCasesAttributesCard,
     // TestedNumberCard,
     TelephoneAdvisoryReportsNumberCard,
     ConsultationDeskReportsNumberCard,

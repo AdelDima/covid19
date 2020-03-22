@@ -135,7 +135,6 @@
   "新型コロナウイルス感染症": "COVID-19",
   "対策サイト": "Task Force website",
   "最終更新": "Last update",
-  "注釈": "This is a provisional translation. Please be aware that there may be mistranslations.",
   "print": "Print",
   "サイドメニュー項目を開く": "Open side menu items",
   "サイドメニュー項目を閉じる": "Close side menu items",
@@ -234,6 +233,6 @@
   "2次元コード": "QRCode",
   "※最新の情報はWebページをご覧ください": "* Please check the latest information from the web site.",
   "ogp": {
-    "og:image": "https://stopcovid19.metro.tokyo.lg.jp/ogp/en/ogp-image.png"
+    "og:image": "https://covid19-dz.netlify.com/ogp/en/ogp-image.png"
   }
 }

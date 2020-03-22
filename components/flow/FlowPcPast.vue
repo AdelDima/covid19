@@ -127,7 +127,7 @@ export default {
       return ['en']
     },
     langsWithoutFlowTitle() {
-      return ['en', 'zh-cn', 'zh-tw']
+      return ['en']
     }
   }
 }

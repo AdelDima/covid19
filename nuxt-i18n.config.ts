@@ -7,7 +7,8 @@ export default {
   defaultLocale: 'ar',
   vueI18n: {
     fallbackLocale: 'ar',
-    formatFallbackMessages: true
+    formatFallbackMessages: true,
+    silentTranslationWarn: process.env.NODE_ENV === 'production'
   },
   // vueI18nLoader: true,
   lazy: true,
@@ -18,12 +19,6 @@ export default {
       name: 'العربية',
       iso: 'ar-AR',
       file: 'ar.json'
-    },
-    {
-      code: 'en',
-      name: 'English',
-      iso: 'en-US',
-      file: 'en.json'
     }
   ]
 }

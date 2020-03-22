@@ -1,6 +1,6 @@
 <template>
   <div
-    class="SideNavigation fixed h-full xl:w-72 sm:w-full bg-white xl:block xl:h-full xl:flex xl:flex-col xl:justify-between"
+    class="SideNavigation sticky xl:fixed md:fixed xl:h-full xl:w-72 w-full bg-white xl:block xl:h-full xl:flex xl:flex-col xl:justify-between"
   >
     <header class="mt-0">
       <v-icon

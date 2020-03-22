@@ -86,7 +86,7 @@
 
     <div v-if="showOverlay" class="overlay">
       <div class="overlay-text">
-        {{ $t('埋め込みコードをコピーしました') }}
+        {{ $t('تم نسخ كود') }}
       </div>
     </div>
   </v-card>
@@ -299,7 +299,7 @@ export default Vue.extend({
       align-items: flex-end;
       .DataView-Share-Opener {
         cursor: pointer;
-        margin-right: 6px;
+        @include margin_end(6px);
         > svg {
           width: auto !important;
         }
@@ -307,13 +307,13 @@ export default Vue.extend({
       .DataView-Share-Buttons {
         position: absolute;
         padding: 8px;
-        right: -4px;
+        @include end(-4px);
         bottom: 1.5em;
         width: 240px;
         border: solid 1px $gray-4;
         background: $white !important;
         border-radius: 8px;
-        text-align: left;
+        @include text_align_start();
         font-size: 1rem;
         z-index: 9000;
 
@@ -330,17 +330,15 @@ export default Vue.extend({
         > .EmbedCode {
           position: relative;
           padding: 4px;
-          padding-right: 30px;
+          @include padding_end(30px);
           color: rgb(3, 3, 3);
           border: solid 1px #eee;
           border-radius: 8px;
-
           font-size: 12px;
-
           .EmbedCode-Copy {
             position: absolute;
             top: 0.3em;
-            right: 0.3em;
+            @include end(0.3em);
             color: $gray-3;
           }
         }
@@ -381,7 +379,7 @@ export default Vue.extend({
     justify-content: center;
     z-index: 9000;
     top: 0;
-    left: 0;
+    @include start(0);
     width: 100%;
     height: 100%;
     user-select: none;

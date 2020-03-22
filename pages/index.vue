@@ -13,10 +13,9 @@
       :btn-text="$t('相談の手順を見る')"
     />
     <v-row class="DataBlock">
-      <confirmed-cases-details-card />
       <confirmed-cases-number-card />
-      <confirmed-cases-attributes-card />
-      <tested-number-card />
+      <confirmed-recovered-number-card />
+      <states-card />
       <confirmed-deaths-number-card />
       <telephone-advisory-reports-number-card />
       <consultation-desk-reports-number-card />
@@ -34,8 +33,11 @@ import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
-import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
+// import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import ConfirmedDeathsNumberCard from '@/components/cards/ConfirmedDeathsNumberCard.vue'
+import ConfirmedRecoveredNumberCard from '@/components/cards/ConfirmedRecoveredNumberCard.vue'
+import StatesCard from '@/components/cards/StatesCard.vue'
+
 // import WhatsNew from '@/components/WhatsNew.vue'
 // import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
@@ -49,8 +51,9 @@ export default Vue.extend({
     PageHeader,
     StaticInfo,
     ConfirmedCasesNumberCard,
-    ConfirmedCasesAttributesCard,
-    ConfirmedDeathsNumberCard
+    ConfirmedRecoveredNumberCard,
+    ConfirmedDeathsNumberCard,
+    StatesCard
   },
   data() {
     const data = {

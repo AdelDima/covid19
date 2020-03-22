@@ -1,5 +1,7 @@
 <template>
-  <div class="TextCard">
+  <div
+    class="TextCard bg-white w-full h-full p-6 rounded overflow-hidden shadow-lg mb-4"
+  >
     <h3 v-if="title" class="TextCard-Heading">
       <div v-if="link">
         <a :href="link" target="_blank" rel="noopener">
@@ -53,8 +55,8 @@ export default Vue.extend({
 
 <style lang="scss">
 .TextCard {
-  @include card-container();
-  padding: 20px;
+  // @include card-container();
+  // padding: 20px;
   margin-bottom: 20px;
   &-Heading {
     @include card-h1();
