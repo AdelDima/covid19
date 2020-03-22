@@ -38,7 +38,7 @@ export default (data: DataType[]) => {
     const TableRow: TableDataType = {
       state: d.state ?? '',
       cases: d.cases ?? '',
-      death: d.cases ?? '',
+      death: d.death ?? '',
       recovered: d.recovered ?? ''
     }
     tableDate.datasets.push(TableRow)
