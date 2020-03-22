@@ -8,9 +8,9 @@
     </v-overlay>
     <div
       v-if="hasNavigation"
-      class="appContainer xl:flex-1 xl:flex xl:overflow-y-hidden"
+      class="appContainer md:flex-1 md:flex md:overflow-y-hidden"
     >
-      <div class="naviContainer xl:w-72 sm:w-full">
+      <div class="naviContainer xl:w-72 md:w-64 sm:w-full">
         <SideNavigation
           :is-navi-open="isOpenNavigation"
           :class="{ open: isOpenNavigation }"
@@ -19,7 +19,7 @@
         />
       </div>
       <main
-        class="mainContainer w-full max-w-screen-xl mx-auto px-6 py-6 xl:flex-1 xl:overflow-x-hidden"
+        class="mainContainer w-full max-w-screen-xl mx-auto px-6 py-6 md:flex-1 md:overflow-x-hidden"
         :class="{ open: isOpenNavigation }"
       >
         <v-container class="p-5">

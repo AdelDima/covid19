@@ -27,7 +27,7 @@ export default {
     const patientsTable = formatStateTable(Data.states.data)
 
     const sumInfoOfPatients = {
-      lText: Data.states.data.length - 1,
+      lText: (Data.states.data.length - 1).toString(),
       sText: this.$t('{date} لتاريخ', {
         date: patientsGraph[patientsGraph.length - 1].label
       }),

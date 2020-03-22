@@ -1,6 +1,6 @@
 <template>
   <div
-    class="SideNavigation sticky xl:fixed md:fixed xl:h-full xl:w-72 w-full bg-white xl:block xl:h-full xl:flex xl:flex-col xl:justify-between"
+    class="SideNavigation sticky xl:fixed md:fixed xl:h-full xl:w-72 md:w-64 w-full bg-white xl:block xl:h-full md:h-full xl:flex xl:flex-col xl:justify-between"
   >
     <header class="mt-0">
       <v-icon
@@ -19,7 +19,7 @@
     </header>
     <v-divider class="SideNavigation-HeadingDivider" />
     <div
-      class="sp-none xl:block xl:h-full xl:flex xl:flex-col xl:justify-between hidden"
+      class="sp-none md:block md:h-full md:flex md:flex-col md:justify-between hidden"
       :class="{ open: isNaviOpen }"
     >
       <v-icon
@@ -28,7 +28,7 @@
         @click="closeNavi"
         >mdi-close</v-icon
       >
-      <nav class="lg:flex xl:block">
+      <nav class="lg:flex md:block">
         <v-list>
           <div
             v-for="(item, i) in items"
