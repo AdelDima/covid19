@@ -17,37 +17,37 @@
     "data": [
       {
         "state": "Blida",
-        "cases": "78",
-        "death": "?",
+        "cases": "110",
+        "death": "8",
         "recovered": "49"
       },
       {
         "state": "Alger",
+        "cases": "21",
+        "death": "1",
+        "recovered": "?"
+      },
+      {
+        "state": "Tizi Ouzou",
+        "cases": "10",
+        "death": "1",
+        "recovered": "?"
+      },
+      {
+        "state": "Oran",
         "cases": "12",
         "death": "?",
         "recovered": "?"
       },
       {
-        "state": "Tizi Ouzou",
-        "cases": "7",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Oran",
-        "cases": "6",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
         "state": "Skikda",
-        "cases": "5",
-        "death": "?",
+        "cases": "11",
+        "death": "1",
         "recovered": "?"
       },
       {
         "state": "Annaba",
-        "cases": "5",
+        "cases": "10",
         "death": "?",
         "recovered": "?"
       },
@@ -71,25 +71,25 @@
       },
       {
         "state": "El Oued",
-        "cases": "2",
+        "cases": "3",
         "death": "2",
         "recovered": "?"
       },
       {
         "state": "Bouira",
-        "cases": "1",
+        "cases": "2",
         "death": "?",
         "recovered": "?"
       },
       {
         "state": "Médéa",
-        "cases": "1",
-        "death": "?",
+        "cases": "2",
+        "death": "1",
         "recovered": "?"
       },
       {
         "state": "Ouargla",
-        "cases": "1",
+        "cases": "2",
         "death": "?",
         "recovered": "?"
       },
@@ -107,8 +107,8 @@
       },
       {
         "state": "Khenchela",
-        "cases": "1",
-        "death": "?",
+        "cases": "2",
+        "death": "2",
         "recovered": "?"
       },
       {
@@ -131,12 +131,18 @@
       },
       {
         "state": "Béjaïa",
+        "cases": "5",
+        "death": "1",
+        "recovered": "?"
+      },
+      {
+        "state": "Biskra",
         "cases": "1",
         "death": "?",
         "recovered": "?"
       },
       {
-        "state": "Biskra",
+        "state": "Setif",
         "cases": "1",
         "death": "?",
         "recovered": "?"

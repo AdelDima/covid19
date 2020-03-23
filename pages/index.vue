@@ -25,6 +25,7 @@
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import PageHeader from '@/components/PageHeader.vue'
+import WhatsNew from '@/components/WhatsNew.vue'
 import StaticInfo from '@/components/StaticInfo.vue'
 import Data from '@/data/data.json'
 import News from '@/data/news.json'
@@ -32,8 +33,6 @@ import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCar
 import ConfirmedDeathsNumberCard from '@/components/cards/ConfirmedDeathsNumberCard.vue'
 import ConfirmedRecoveredNumberCard from '@/components/cards/ConfirmedRecoveredNumberCard.vue'
 import StatesCard from '@/components/cards/StatesCard.vue'
-
-// import WhatsNew from '@/components/WhatsNew.vue'
 // import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 // import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
 // import TelephoneAdvisoryReportsNumberCard from '@/components/cards/TelephoneAdvisoryReportsNumberCard.vue'
@@ -44,6 +43,7 @@ import StatesCard from '@/components/cards/StatesCard.vue'
 export default Vue.extend({
   components: {
     PageHeader,
+    WhatsNew,
     StaticInfo,
     ConfirmedCasesNumberCard,
     ConfirmedRecoveredNumberCard,

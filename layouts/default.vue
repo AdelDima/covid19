@@ -33,7 +33,6 @@
       </v-container>
     </div>
     <NoScript />
-    <development-mode-mark />
   </v-app>
 </template>
 
@@ -43,7 +42,6 @@ import { MetaInfo } from 'vue-meta'
 import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
 import SideNavigation from '@/components/SideNavigation.vue'
 import NoScript from '@/components/NoScript.vue'
-// import DevelopmentModeMark from '@/components/DevelopmentModeMark.vue'
 
 type LocalData = {
   hasNavigation: boolean

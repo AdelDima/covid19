@@ -145,6 +145,11 @@ export default Vue.extend({
           link: this.localePath('/parent')
         },
         {
+          icon: 'covid',
+          title: this.$t('دليلك التوعوي عن كورونا'),
+          link: this.localePath('/corona')
+        },
+        {
           icon: 'mdi-information-outline',
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')

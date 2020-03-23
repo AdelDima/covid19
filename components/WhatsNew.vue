@@ -63,7 +63,7 @@ export default Vue.extend({
   @include card-container();
   padding: 10px;
   margin-bottom: 20px;
-}
+}*/
 
 .WhatsNew-heading {
   display: flex;
@@ -76,8 +76,8 @@ export default Vue.extend({
   &-icon {
     margin: 3px;
   }
-}*/
-/*
+}
+
 .WhatsNew .WhatsNew-list {
   padding-left: 0px;
   list-style-type: none;
@@ -116,5 +116,5 @@ export default Vue.extend({
       }
     }
   }
-}*/
+}
 </style>

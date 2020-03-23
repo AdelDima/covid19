@@ -1,14 +1,14 @@
 {
-    "newsItems": [
-        {
-            "date": "3\/12\/2020",
-            "url": "https:\/\/www.bousai.metro.tokyo.lg.jp\/taisaku\/saigai\/1007261\/1007473.html",
-            "text": "東京都緊急対応策（第三弾）の発表"
-        },
-        {
-            "date": "3\/12\/2020",
-            "url": "https:\/\/www.bousai.metro.tokyo.lg.jp\/taisaku\/saigai\/1007261\/1007472.html",
-            "text": "都内医療機関、福祉施設等へのマスクの配布について"
-        }
-    ]
+  "newsItems": [
+    {
+      "date": "3/22/2020",
+      "url": "https://www.aps.dz/ar/algerie/85585-2020-03-22-18-35-47",
+      "text": "رئيس الجمهورية يعلن عن حزمة من الاجراءات الفورية لمواجهة وباء كورونا"
+    },
+    {
+      "date": "3/22/2020",
+      "url": "http://www.aps.dz/ar/algerie/85580-100",
+      "text": "الرئيس تبون يأمر بتسخير 100 مليون دولار لاستيراد المواد الصيدلانية والعتاد اللازم"
+    }
+  ]
 }
