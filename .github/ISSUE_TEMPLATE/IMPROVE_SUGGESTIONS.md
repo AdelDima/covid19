@@ -1,19 +1,18 @@
 ---
-name: '改善提案 / Improvement Suggestions'
-about: '「こうするともっとよくなる」といったWebサイトへの提案はこちら'
+name: 'Improvement Suggestions'
+about: 'Click here for suggestions for websites such as "I will do better"'
 labels: improve
 ---
 
-## 改善詳細 / Details of Improvement
-- xxxx(できるだけ簡潔に/as concise as possible)
+## Details of Improvement
+- xxxx(as concise as possible)
 
-## スクリーンショット / Screenshot
-<!-- バグであればdeveloper toolからコンソールも合わせて添付 -->
+## Screenshot
 <!-- If it's a bug, attach a screenshot of the developer tool console -->
 
-## 期待する見せ方・挙動 / Expected behavior
-- xxxx(できるだけ簡潔に/as concise as possible)
+## Expected behavior
+- xxxx(as concise as possible)
 
-## 動作環境・ブラウザ / Environment
+## Environment
 - macOS / Windows / Linux / iOS / Android
 - Chrome / Safari / Firefox / Edge / Internet Explorer
