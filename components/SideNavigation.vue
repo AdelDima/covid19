@@ -54,38 +54,15 @@
       <v-footer
         class="SideNavigation-Footer bg-gray-900 px-4 py-4 sm:text-right"
       >
-        <!--
         <div class="flex flex-row">
           <a
-            href="https://line.me/R/ti/p/%40822sysfc"
-            target="_blank"
-            rel="noopener"
-          >
-            <img class="m-2 w-8" src="/line.png" alt="LINE" />
-          </a>
-          <a
-            href="https://twitter.com/tokyo_bousai"
-            target="_blank"
-            rel="noopener"
-          >
-            <img class="m-2 w-8" src="/twitter.png" alt="Twitter" />
-          </a>
-          <a
-            href="https://www.facebook.com/tochokoho"
-            target="_blank"
-            rel="noopener"
-          >
-            <img class="m-2 w-8" src="/facebook.png" alt="Facebook" />
-          </a>
-          <a
-            href="https://github.com/tokyo-metropolitan-gov/covid19"
+            href="https://github.com/AdelDima/covid19"
             target="_blank"
             rel="noopener"
           >
             <img class="m-2 w-8" src="/github.png" alt="GitHub" />
           </a>
         </div>
-        -->
         <small class="SideNavigation-Copyright">
           {{ $t('このサイトの内容物は') }}
           <a
