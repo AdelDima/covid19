@@ -1,6 +1,6 @@
 {
   "patients": {
-    "date": "2020/03/22 20:30",
+    "date": "2020/03/24 18:30",
     "data": [
       {
         "リリース日": "2020-02-27T08:00:00.000Z",
@@ -13,144 +13,156 @@
     ]
   },
   "states": {
-    "date": "2020/03/22 20:30",
+    "date": "2020/03/24 18:30",
     "data": [
       {
-        "state": "Blida",
-        "cases": "110",
+        "state": "البليدة, Blida",
+        "cases": "125",
         "death": "8",
-        "recovered": "49"
+        "recovered": "62"
       },
       {
-        "state": "Alger",
-        "cases": "21",
-        "death": "1",
-        "recovered": "?"
+        "state": "الجزائر العاصمة, Algiers",
+        "cases": "42",
+        "death": "3",
+        "recovered": "0"
       },
       {
-        "state": "Tizi Ouzou",
-        "cases": "10",
-        "death": "1",
-        "recovered": "?"
-      },
-      {
-        "state": "Oran",
+        "state": "تيزي وزو, Tizi Ouzou",
         "cases": "12",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Skikda",
-        "cases": "11",
-        "death": "1",
-        "recovered": "?"
-      },
-      {
-        "state": "Annaba",
-        "cases": "10",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Guelma",
-        "cases": "2",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Mascara",
-        "cases": "2",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Bordj Bou Arreridj",
-        "cases": "2",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "El Oued",
-        "cases": "3",
         "death": "2",
-        "recovered": "?"
+        "recovered": "0"
       },
       {
-        "state": "Bouira",
-        "cases": "2",
-        "death": "?",
-        "recovered": "?"
+        "state": "وهران, Oran",
+        "cases": "8",
+        "death": "0",
+        "recovered": "0"
       },
       {
-        "state": "Médéa",
-        "cases": "2",
-        "death": "1",
-        "recovered": "?"
-      },
-      {
-        "state": "Ouargla",
-        "cases": "2",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Boumerdès",
-        "cases": "1",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Tissemsilt",
-        "cases": "1",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Khenchela",
-        "cases": "2",
-        "death": "2",
-        "recovered": "?"
-      },
-      {
-        "state": "Souk Ahras",
-        "cases": "1",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Relizane",
-        "cases": "1",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Adrar",
-        "cases": "1",
-        "death": "?",
-        "recovered": "?"
-      },
-      {
-        "state": "Béjaïa",
+        "state": "سكيكدة, Skikda",
         "cases": "5",
         "death": "1",
-        "recovered": "?"
+        "recovered": "0"
       },
       {
-        "state": "Biskra",
-        "cases": "1",
-        "death": "?",
-        "recovered": "?"
+        "state": "عنابة, Annaba",
+        "cases": "6",
+        "death": "0",
+        "recovered": "0"
       },
       {
-        "state": "Setif",
+        "state": "معسكر, Mascara",
+        "cases": "2",
+        "death": "0",
+        "recovered": "2"
+      },
+      {
+        "state": "برج بوعريرج, Bordj Bou Arréridj",
+        "cases": "2",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "الوادي, El Oued",
+        "cases": "4",
+        "death": "2",
+        "recovered": "0"
+      },
+      {
+        "state": "البويرة, Bouira",
+        "cases": "2",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "المدية, Médéa",
+        "cases": "5",
+        "death": "1",
+        "recovered": "0"
+      },
+      {
+        "state": "ورقلة, Ouargla",
         "cases": "1",
-        "death": "?",
-        "recovered": "?"
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "بومرداس, Boumerdès",
+        "cases": "3",
+        "death": "2",
+        "recovered": "0"
+      },
+      {
+        "state": "تيسيمسيلت, Tissemsilt",
+        "cases": "1",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "خنشلة, Khenchela",
+        "cases": "2",
+        "death": "2",
+        "recovered": "0"
+      },
+      {
+        "state": "سوق أهراس, Souk Ahras",
+        "cases": "1",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "غليزان, Relizane",
+        "cases": "1",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "الشلف, Chlef",
+        "cases": "1",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "قسنطينة, Constantine",
+        "cases": "1",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "أدرار, Adrar",
+        "cases": "2",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "تيبازة, Tipaza",
+        "cases": "2",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "بجاية, Béjaïa",
+        "cases": "5",
+        "death": "1",
+        "recovered": "0"
+      },
+      {
+        "state": "سطيف, Sétif",
+        "cases": "3",
+        "death": "0",
+        "recovered": "0"
+      },
+      {
+        "state": "جيجل‎, Jijel",
+        "cases": "1",
+        "death": "0",
+        "recovered": "0"
       }
     ]
   },
   "patients_summary": {
-    "date": "2020/03/22 20:30",
+    "date": "2020/03/24 18:30",
     "data": [
       {
         "日付": "2020-02-25T08:00:00.000Z",
@@ -259,11 +271,19 @@
       {
         "日付": "2020-03-22T08:00:00.000Z",
         "小計": 62
+      },
+      {
+        "日付": "2020-03-23T08:00:00.000Z",
+        "小計": 29
+      },
+      {
+        "日付": "2020-03-24T08:00:00.000Z",
+        "小計": 34
       }
     ]
   },
   "deaths_summary": {
-    "date": "2020/03/22 20:30",
+    "date": "2020/03/24 18:30",
     "data": [
       {
         "日付": "2020-02-25T08:00:00.000Z",
@@ -366,11 +386,19 @@
         "小計": 3
       },
       {
-        "日付": "2020-03-20T08:00:00.000Z",
+        "日付": "2020-03-21T08:00:00.000Z",
         "小計": 3
       },
       {
-        "日付": "2020-03-20T08:00:00.000Z",
+        "日付": "2020-03-22T08:00:00.000Z",
+        "小計": 2
+      },
+      {
+        "日付": "2020-03-23T08:00:00.000Z",
+        "小計": 0
+      },
+      {
+        "日付": "2020-03-23T08:00:00.000Z",
         "小計": 2
       }
     ]
@@ -488,7 +516,7 @@
       }
     ]
   },
-  "lastUpdate": "2020/03/22 8:00",
+  "lastUpdate": "2020/03/24 8:00",
   "main_summary": {
     "attr": "検査実施人数",
     "value": 1672,

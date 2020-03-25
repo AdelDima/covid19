@@ -1,25 +1,24 @@
 ---
-name: 'バグ報告 / Bug Report'
-about: '既存のWebサイトに不具合がある場合・更新しなければならないタスクなどはこちら'
+name: ' Bug Report'
+about: 'Click here for tasks that need to be updated if there is a problem with the existing website'
 labels: bug
 ---
 
-## 起こっている問題 / The Problem
-- xxxx(できるだけ簡潔に/as concise as possible)
+##  The Problem
+- xxxx(as concise as possible)
 
-## スクリーンショット / Screenshot
-<!-- バグであればdeveloper toolからコンソールも合わせて添付 -->
+## Screenshot
 <!-- If it's a bug, attach a screenshot of the developer tool console -->
 
-## 期待する見せ方・挙動 / Expected Behavior
-- xxxx(できるだけ簡潔に/as concise as possible)
+##  Expected Behavior
+- xxxx(as concise as possible)
 
 
-## 起こっている問題の再現手段 / Steps to Reproduce
+## Steps to Reproduce
 1. xxx
 2. xxx
 3. xxx
 
-## 動作環境・ブラウザ / Environment
+##  Environment
 - macOS / Windows / Linux / iOS / Android
 - Chrome / Safari / Firefox / Edge / Internet Explorer
